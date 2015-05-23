@@ -21,21 +21,7 @@ def decryption():
 
     print "Your decrypted code -  " + string.translate(decrypt_string,table2)
 
-i=1
-while i==1:
-    print "Enter your choice"
-    print "1.Encryption"
-    print "2.Decryption"
-    c=int(raw_input())
-    if c==1:
-        encryption()
-    elif c==2 :
-        decryption()
-    else :
-        print "Wrong choice"
-    print "Do you want to continue : "
-    choice=raw_input()
-    if choice !="yes":
-        i=2
+encryption()
+decryption()
 
 
