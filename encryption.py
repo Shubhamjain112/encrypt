@@ -1,7 +1,9 @@
-#This code is about generating random numbers from 1 to 26.
+#This code is about generating random numbers from 1 to 25.
+#Instead of generating random numbers from 1 to 26, only numbers from 1 to 25 have been generated to avoid..
+#...THE 'unfortunate' case where no encryption takes place (the one corresponding to x = 26).
 import random
 import re, string
-x=random.randint(1,26)  # now x stores random number from 1 to 26
+x=random.randint(1,25)  # now x stores random number from 1 to 25
 #take the input of string which u want to encrypt!
 def encryption():
     print "\nEnter the string you want to encrypt." #Only letters a-z allowed(lowercase)!
